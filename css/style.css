@@ -54,11 +54,13 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -75,6 +77,29 @@ body {
   font-weight: 700;
   letter-spacing: 17.5px;
   animation: move-up 1s ease-out;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.1s;
+  padding: 15px 40px;
+  border-radius: 40px;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.btn:active {
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background: #fff;
+  color: #777;
 }
 
 @keyframes move-left {
