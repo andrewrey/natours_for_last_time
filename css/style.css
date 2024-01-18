@@ -87,6 +87,7 @@ body {
   border-radius: 100px;
   display: inline-block;
   transition: all 0.1s;
+  position: relative;
 }
 
 .btn:hover {
@@ -102,6 +103,22 @@ body {
 .btn-white {
   background: #fff;
   color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-white::after {
+  background-color: #fff;
 }
 
 @keyframes move-left {
