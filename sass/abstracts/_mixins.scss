@@ -5,3 +5,7 @@
     display: table;
   }
 }
+
+@mixin grid_setup($horizontal_gutter, $num_columns, $num_gaps) {
+  width: calc((100% - (#{$horizontal_gutter} * $num_gaps)) / $num_columns);
+}
