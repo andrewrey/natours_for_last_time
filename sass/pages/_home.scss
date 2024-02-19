@@ -8,14 +8,17 @@
 
 .section-features {
   padding: 20rem 0;
-  border: 1px solid red;
+  margin-top: -15rem;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.798),
       rgba($color-primary-dark, 0.8)
     ),
-    url("../img/hero.jpg");
+    url("../img/nat-4.jpg");
   background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
 }
